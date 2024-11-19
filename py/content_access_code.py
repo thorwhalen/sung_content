@@ -1,4 +1,4 @@
-"""Code to access thorwhalen/content data with ease
+"""Code to access thorwhalen/sung_content data with ease
 
 Note on requirements:
 Minimum:   pip install graze
@@ -6,9 +6,7 @@ Optionally (for get_table function): pip install pandas
 
 """
 
-org = 'thorwhalen'
-repo = 'sung_content'
-branch = 'main'
+org, repo, branch = 'thorwhalen/sung_content/main'.split('/')
 content_url = (f'https://raw.githubusercontent.com/{org}/{repo}/{branch}' + '/{}').format  # function returning url of raw content from 
 
 
